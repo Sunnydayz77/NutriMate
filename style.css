@@ -1,3 +1,12 @@
+/*--------- Full Page -------------*/
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Merriweather", serif;
+}
+
+/*--------- Header -------------*/
+
 header {
   text-align: center;
   background: url("https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=brooke-lark-HlNcigvUi4Q-unsplash.jpg");
@@ -8,25 +17,25 @@ header {
   color: rgb(255, 255, 255);
 }
 
-body {
-  background-color: rgb(255, 255, 255);
-  font-family: "Merriweather", serif;
+/*--------- Navigation Bar -------------*/
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 h1 {
   font-family: "Merriweather", serif;
   font-size: 60px;
   text-align: center;
-  padding: 15px;
   margin: 0 auto;
   background-size: cover;
   color: rgb(255, 255, 255);
   font-weight: 700;
-  /* -webkit-text-fill-color: rgb(128, 128, 128); Will override color (regardless of order) */
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(33, 175, 104); */
   border: 3px rgb(255, 255, 255);
-  border-radius: 25% 10%;
+  border-radius: 10% / 50%;
   background: rgba(49, 49, 49, 0.6);
 }
 
@@ -34,23 +43,20 @@ li {
   display: inline;
   /* align-items: center; */
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px 90px 10px 90px;
   border: 3px white;
-  border-radius: 25% 10%;
-  background: rgba(49, 49, 49, 0.6);
+  border-radius: 10% / 50%;
+  background: rgba(3, 94, 0, 0.6);
 }
 
 a {
   font-family: "Merriweather", serif;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 700;
   display: inline;
   background-size: cover;
-  /* -webkit-text-fill-color: rgb(128, 128, 128); Will override color (regardless of order) */
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(33, 175, 104); */
 }
 
 a:hover,
@@ -63,6 +69,7 @@ button:hover {
   filter: alpha(opacity=50);
 } */
 
+/*--------- Main Section -------------*/
 main {
   font-family: "Merriweather", serif;
   color: rgb(33, 175, 104);
@@ -71,24 +78,31 @@ main {
   margin: 0 auto;
 }
 
+/*--------- Search Bar -------------*/
+
+#searchBar {
+  flex-wrap: wrap;
+}
+
 input {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Merriweather", serif;
-  border-radius: 25% 10%;
+  border-radius: 10% / 30%;
 }
 
 button {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Merriweather", serif;
-  border-radius: 25% 10%;
+  border-radius: 10% / 50%;
 }
+
+/*--------- Nutrition Facts Label -------------*/
 
 #nutritionLabel {
   color: rgb(0, 0, 0);
 }
-/* 
-#quote {
-} */
+
+/*--------- Footer -------------*/
 
 footer {
   font-family: "Merriweather", serif;
@@ -104,13 +118,10 @@ footer {
   font-weight: 700;
   display: grid;
   align-items: end;
-  /* -webkit-text-fill-color: rgb(128, 128, 128); Will override color (regardless of order) */
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(33, 175, 104); */
 }
 
 .footerFont {
   border: 7px white;
-  border-radius: 25% 10%;
+  border-radius: 10% / 50%;
   background: rgba(49, 49, 49, 0.6);
 }
