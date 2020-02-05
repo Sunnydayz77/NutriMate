@@ -63,12 +63,22 @@ let renderList = field => {
 //   }
 // };
 
-button.addEventListener(`click`, async () => {
+const apiCall = async () => {
   let response = await axios.get(
     `${DOMAIN}v1_1/search/${input.value}?results=0:50&fields=item_name,brand_name,item_id,nf_calories,nf_sodium,nf_sugars&appId=${APP_ID}&appKey=${API_KEY}`
   );
   renderList(response.data.hits);
   console.log(response.data.hits);
+};
+
+button.addEventListener(`click`, async () => {
+  apiCall();
+});
+
+input.addEventListener(`keyup`, async event => {
+  if (event.keyCode === 13) {
+    apiCall();
+  }
 });
 
 //renderList.innerHTML = ``;
