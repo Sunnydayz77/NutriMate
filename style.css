@@ -8,55 +8,54 @@ body {
 /*--------- Header -------------*/
 
 header {
-  text-align: center;
   background: url("https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=brooke-lark-HlNcigvUi4Q-unsplash.jpg");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
   color: rgb(255, 255, 255);
+  height: 500px;
+  text-align: center;
 }
 
 /*--------- Navigation Bar -------------*/
 
 ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 h1 {
-  font-family: "Merriweather", serif;
-  font-size: 60px;
-  text-align: center;
-  margin: 0 auto;
+  background: rgba(49, 49, 49, 0.6);
   background-size: cover;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
   border: 3px rgb(255, 255, 255);
   border-radius: 10% / 50%;
-  background: rgba(49, 49, 49, 0.6);
+  color: rgb(255, 255, 255);
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
 }
 
 li {
-  display: inline;
-  /* align-items: center; */
-  justify-content: space-between;
-  padding: 10px 90px 10px 90px;
+  background: rgba(3, 94, 0, 0.6);
   border: 3px white;
   border-radius: 10% / 50%;
-  background: rgba(3, 94, 0, 0.6);
+  display: inline;
+  justify-content: space-between;
+  padding: 10px 90px 10px 90px;
 }
 
 a {
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  display: inline;
   font-family: "Merriweather", serif;
   font-size: 20px;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
   font-weight: 700;
-  display: inline;
-  background-size: cover;
+  text-decoration: none;
 }
 
 a:hover,
@@ -71,11 +70,11 @@ button:hover {
 
 /*--------- Main Section -------------*/
 main {
-  font-family: "Merriweather", serif;
   color: rgb(33, 175, 104);
-  text-align: center;
-  padding: 20px;
+  font-family: "Merriweather", serif;
   margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 /*--------- Search Bar -------------*/
@@ -85,15 +84,15 @@ main {
 }
 
 input {
-  font-size: 25px;
-  font-family: "Merriweather", serif;
   border-radius: 10% / 30%;
+  font-family: "Merriweather", serif;
+  font-size: 25px;
 }
 
 button {
-  font-size: 25px;
-  font-family: "Merriweather", serif;
   border-radius: 10% / 50%;
+  font-family: "Merriweather", serif;
+  font-size: 25px;
 }
 
 /*--------- Nutrition Facts Label -------------*/
@@ -105,23 +104,23 @@ button {
 /*--------- Footer -------------*/
 
 footer {
-  font-family: "Merriweather", serif;
-  font-size: 20px;
-  text-align: center;
-  margin: 0 auto;
+  align-items: end;
   background: url("https://images.unsplash.com/photo-1478144592103-25e218a04891?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
   color: rgb(255, 255, 255);
-  font-weight: 700;
   display: grid;
-  align-items: end;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footerFont {
+  background: rgba(49, 49, 49, 0.6);
   border: 7px white;
   border-radius: 10% / 50%;
-  background: rgba(49, 49, 49, 0.6);
 }
