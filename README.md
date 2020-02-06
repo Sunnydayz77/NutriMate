@@ -32,13 +32,22 @@ Post-MVP:
 2. Create a second page where users can input their information into a daily food journal.
 3. Make the health quotes fade in and out without the having to leave the page/refresh the page.
 
+
 Technologies used:
+
+
 
 Approaches taken:
 
+
+
 Relevant instructions for viewers:
 
+
+
 Unsolved problems:
+
+
 
 Link to live site:
 

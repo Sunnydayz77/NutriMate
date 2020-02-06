@@ -18,6 +18,9 @@ header {
 }
 
 /*--------- Navigation Bar -------------*/
+.container {
+  display: flex;
+}
 
 ul {
   display: flex;
@@ -58,6 +61,14 @@ a {
   text-decoration: none;
 }
 
+#home {
+  flex: 1 1 100px;
+}
+
+#foodJournal {
+  flex: 1 1 100px;
+}
+
 a:hover,
 button:hover {
   background-color: rgb(4, 114, 32, 0.5);
@@ -85,12 +96,15 @@ main {
 
 input {
   border-radius: 10% / 30%;
+  flex-wrap: wrap;
   font-family: "Merriweather", serif;
   font-size: 25px;
+  text-align: center;
 }
 
 button {
   border-radius: 10% / 50%;
+  flex-wrap: wrap;
   font-family: "Merriweather", serif;
   font-size: 25px;
 }
@@ -103,6 +117,13 @@ button {
 
 /*--------- Footer -------------*/
 
+/* .footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+} */
+
 footer {
   align-items: end;
   background: url("https://images.unsplash.com/photo-1478144592103-25e218a04891?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80");
@@ -111,6 +132,7 @@ footer {
   background-size: cover;
   color: rgb(255, 255, 255);
   display: grid;
+  flex-wrap: wrap;
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 700;
@@ -123,4 +145,43 @@ footer {
   background: rgba(49, 49, 49, 0.6);
   border: 7px white;
   border-radius: 10% / 50%;
+  /* flex-wrap: wrap; */
+}
+
+/*--------- iPad Responsiveness -------------*/
+
+@media all and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex: 1 1 50%;
+  }
+}
+
+/*--------- iPhone Responsiveness -------------*/
+
+@media all and (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex: 1 1 100%;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 0px;
+  }
+
+  #searchBar {
+    font-size: 16px;
+  }
 }
