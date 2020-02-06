@@ -32,22 +32,21 @@ Post-MVP:
 2. Create a second page where users can input their information into a daily food journal.
 3. Make the health quotes fade in and out without the having to leave the page/refresh the page.
 
-
 Technologies used:
-
-
+-Html
+-CSS
+-Javascript
+-Nutritionix API
+-flexbox
+-responsive and scalable to mac, tablet, and mobile
+-event listener for click event as well as enter key event
+-Unsplash for images
 
 Approaches taken:
 
-
-
 Relevant instructions for viewers:
 
-
-
 Unsolved problems:
-
-
 
 Link to live site:
 
