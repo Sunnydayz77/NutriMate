@@ -1,7 +1,7 @@
 /*--------- Full Page -------------*/
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 245, 219);
   font-family: "Merriweather", serif;
 }
 
@@ -20,9 +20,10 @@ header {
 /*--------- Navigation Bar -------------*/
 .container {
   display: flex;
+  text-align: center;
 }
 
-ul {
+.container > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -42,11 +43,12 @@ h1 {
   text-align: center;
 }
 
-li {
+#home, #foodJournal {
   background: rgba(3, 94, 0, 0.6);
   border: 3px white;
   border-radius: 10% / 50%;
   display: inline;
+  flex: 1 1 100px;
   justify-content: space-between;
   padding: 10px 90px 10px 90px;
 }
@@ -61,14 +63,6 @@ a {
   text-decoration: none;
 }
 
-#home {
-  flex: 1 1 100px;
-}
-
-#foodJournal {
-  flex: 1 1 100px;
-}
-
 a:hover,
 button:hover {
   background-color: rgb(4, 114, 32, 0.5);
@@ -78,9 +72,18 @@ button:hover {
 main {
   color: rgb(33, 175, 104);
   font-family: "Merriweather", serif;
-  margin: 0 auto;
   padding: 20px;
+}
+
+/*--------- Food Journal -------------*/
+
+h2 {
+  font-size: 50px;
   text-align: center;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 /*--------- Footer -------------*/
@@ -140,5 +143,43 @@ footer {
 
   main {
     padding: 0px;
+  }
+}
+
+/*--------- Print Page -------------*/
+
+@media print {
+  header * {
+    /* visibility: hidden; */
+    display: none;
+    /* overflow: none;
+    height: 0px; */
+  }
+
+  footer * {
+    /* visibility: hidden; */
+    display: none;
+    /* overflow: none;
+    height: 0px; */
+  }
+
+  .container * {
+    /* visibility: hidden; */
+    display: none;
+    /* overflow: none; 
+    height: 0px; */
+  }
+
+  #printArea, #printArea * {
+    visibility: visible;
+    display: block;
+  }
+  #printArea {
+    /* overflow: visible;  */
+    position: absolute !important; 
+    top:0;
+    left:0;
+    font-size: 14px;
+    display: block;
   }
 }

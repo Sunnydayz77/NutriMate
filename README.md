@@ -39,7 +39,9 @@ Technologies used:
 -Nutritionix API
 -flexbox
 -responsive and scalable to mac, tablet, and mobile
--event listener for click event as well as enter key event
+-hover ability over links
+-event listener for click event as well as enter key event when searching for nutritional info
+-nutritional info reloads when searching for a new item without having to reload the page
 -Unsplash for images
 
 Approaches taken:

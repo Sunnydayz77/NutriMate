@@ -17,6 +17,11 @@ let input = document.querySelector(`input`);
 let renderList = field => {
   console.log(field);
 
+  const nutriInfo = document.querySelectorAll(".nutritionInfo");
+  nutriInfo.forEach(element => {
+    element.remove();
+  });
+
   field.forEach(fields => {
     let brandName = fields.fields.brand_name;
     let itemName = fields.fields.item_name;
@@ -27,16 +32,16 @@ let renderList = field => {
     let sodium = fields.fields.nf_sodium;
 
     let newDiv = document.createElement("div");
+    newDiv.classList.add("nutritionInfo");
     newDiv.innerHTML += `<h2>Brand: ${brandName}</h2>
         <h2>Item: ${itemName}</h2>
         <h3>${servingSize} ${servingSizeUnit}</h3>
         <h3>Calories: ${calories}</h3>
-        <h3>Sodium: ${sodium}</h3>
-        <h3>Sugar: ${sugar}</h3>
+        <h3>Sodium: ${sodium}mg</h3>
+        <h3>Sugar: ${sugar}g</h3>
         <hr>`;
     document.querySelector("#nutritionLabel").appendChild(newDiv);
   });
-  // newDiv.innerHTML = ``;
 };
 
 //Or use for loop below in comments! -->

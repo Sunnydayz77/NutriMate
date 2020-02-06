@@ -1,7 +1,7 @@
 /*--------- Full Page -------------*/
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f5dc;
   font-family: "Merriweather", serif;
 }
 
@@ -20,6 +20,10 @@ header {
 /*--------- Navigation Bar -------------*/
 .container {
   display: flex;
+}
+
+.container > li {
+  align-items: center;
 }
 
 ul {
@@ -74,13 +78,9 @@ button:hover {
   background-color: rgb(4, 114, 32, 0.5);
 }
 
-/* img {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-} */
-
 /*--------- Main Section -------------*/
 main {
+  align-items: center;
   color: rgb(33, 175, 104);
   font-family: "Merriweather", serif;
   margin: 0 auto;
@@ -99,7 +99,6 @@ input {
   flex-wrap: wrap;
   font-family: "Merriweather", serif;
   font-size: 25px;
-  text-align: center;
 }
 
 button {
