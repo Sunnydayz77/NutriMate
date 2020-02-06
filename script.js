@@ -36,6 +36,7 @@ let renderList = field => {
         <hr>`;
     document.querySelector("#nutritionLabel").appendChild(newDiv);
   });
+  // newDiv.innerHTML = ``;
 };
 
 //Or use for loop below in comments! -->
@@ -80,5 +81,3 @@ input.addEventListener(`keyup`, async event => {
     apiCall();
   }
 });
-
-//renderList.innerHTML = ``;
