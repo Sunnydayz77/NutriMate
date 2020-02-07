@@ -68,6 +68,6 @@ Unsolved problems:
 
 <!-- ------------------- -->
 
-Link to live site:
+Link to live site: https://nutrimate.surge.sh/
 
 # NutriMate
