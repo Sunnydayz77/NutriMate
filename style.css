@@ -12,9 +12,26 @@ header {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10% / 30%;
+  box-shadow: 20px 20px 50px 10px rgb(128, 128, 128);
   color: rgb(255, 255, 255);
   height: 500px;
   text-align: center;
+}
+
+h1 {
+  background: rgba(49, 49, 49, 0.6);
+  background-size: cover;
+  border: 3px rgb(255, 255, 255);
+  border-radius: 10% / 70%;
+  box-shadow: 20px 20px 50px 10px rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 91%;
 }
 
 /*--------- Navigation Bar -------------*/
@@ -33,25 +50,14 @@ ul {
   width: 100%;
 }
 
-h1 {
-  background: rgba(49, 49, 49, 0.6);
-  background-size: cover;
-  border: 3px rgb(255, 255, 255);
-  border-radius: 10% / 50%;
-  color: rgb(255, 255, 255);
-  font-family: "Merriweather", serif;
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0 auto;
-  text-align: center;
-}
-
 li {
   background: rgba(3, 94, 0, 0.6);
   border: 3px white;
   border-radius: 10% / 50%;
   display: inline;
   justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
   padding: 10px 90px 10px 90px;
 }
 
@@ -134,6 +140,8 @@ footer {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10% / 30%;
+  box-shadow: 10px 10px 50px 10px rgb(128, 128, 128);
   color: rgb(255, 255, 255);
   display: grid;
   flex-wrap: wrap;
@@ -147,8 +155,13 @@ footer {
   background: rgba(49, 49, 49, 0.6);
   border: 7px rgb(255, 255, 255);
   border-radius: 10% / 50%;
+  box-shadow: 20px 10px 50px 10px hsl(0, 0%, 50%);
   font-size: 20px;
   font-weight: 700;
+  justify-content: center;
+  max-width: 92%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*--------- iPad Responsiveness -------------*/
