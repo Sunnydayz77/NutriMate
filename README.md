@@ -46,10 +46,13 @@ Technologies used:
 -Unsplash for images
 
 Approaches taken:
+I started with creating the outline and framework via HTML. I then went into CSS to create an outline of all of the elements. 
+
 
 Relevant instructions for viewers:
 
 Unsolved problems:
+-google sheets for food journal so viewer can type right into the screen
 
 Link to live site:
 

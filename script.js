@@ -30,6 +30,13 @@ let renderList = field => {
     let calories = fields.fields.nf_calories;
     let sugar = fields.fields.nf_sugars;
     let sodium = fields.fields.nf_sodium;
+    let totalFat = fields.fields.nf_total_fat;
+    let saturatedFat = fields.fields.nf_saturated_fat;
+    let transFat = fields.fields.nf_trans_fatty_acid;
+    let cholesterol = fields.fields.nf_cholesterol;
+    let totalCarbs = fields.fields.nf_total_carbohydrate;
+    let fiber = fields.fields.nf_dietary_fiber;
+    let protein = fields.fields.nf_protein;
 
     let newDiv = document.createElement("div");
     newDiv.classList.add("nutritionInfo");
@@ -78,7 +85,8 @@ let renderList = field => {
 
 const apiCall = async () => {
   let response = await axios.get(
-    `${DOMAIN}v1_1/search/${input.value}?results=0:50&fields=item_name,brand_name,item_id,nf_calories,nf_sodium,nf_sugars&appId=${APP_ID}&appKey=${API_KEY}`
+    `${DOMAIN}v1_1/search/${input.value}?results=0:50&fields=item_name,brand_name,item_id,nf_calories,nf_sodium,nf_sugars,nf_total_fat,nf_saturated_fat,nf_trans_fatty_acid,nf_cholesterol,nf_total_carbohydrate,nf_dietary_fiber,nf_protein
+&appId=${APP_ID}&appKey=${API_KEY}`
   );
   renderList(response.data.hits);
   console.log(response.data.hits);
