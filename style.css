@@ -1,7 +1,7 @@
 /*--------- Full Page -------------*/
 
 body {
-  background-color: #f5f5dc;
+  background-color: rgb(245, 245, 220);
   font-family: "Merriweather", serif;
 }
 
@@ -112,6 +112,18 @@ button {
 
 #nutritionLabel {
   color: rgb(0, 0, 0);
+  background: rgba(3, 94, 0, 0.35);
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+#topItem {
+  padding: 10px 0 0 0;
+}
+
+hr {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.308);
 }
 
 /*--------- Footer -------------*/
