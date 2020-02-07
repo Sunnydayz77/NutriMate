@@ -8,7 +8,10 @@ Decription: NutriMate is an app that details nutritional information to the user
 
 <!-- Wireframes: Mockups of your app on desktop, tablet, and mobile. -->
 
-Wireframes: On Marvel App! --> https://marvelapp.com/4bee4ba
+Wireframes:
+Interactive display on Marvel App --> https://marvelapp.com/4bee4ba
+
+Image of wireframe via Imgur --> https://i.imgur.com/uqfleXw.png
 
 <!-- API: Which API you will be using. -->
 
