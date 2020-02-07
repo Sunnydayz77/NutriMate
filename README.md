@@ -37,6 +37,7 @@ Technologies used:
 -CSS
 -Javascript
 -Nutritionix API
+-Google Fonts: Merriweather
 -flexbox
 -responsive and scalable to mac, tablet, and mobile
 -hover ability over links

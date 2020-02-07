@@ -112,16 +112,10 @@ button {
 
 #nutritionLabel {
   color: rgb(0, 0, 0);
+
 }
 
 /*--------- Footer -------------*/
-
-/* .footerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-} */
 
 footer {
   align-items: end;
@@ -133,8 +127,6 @@ footer {
   display: grid;
   flex-wrap: wrap;
   font-family: "Merriweather", serif;
-  font-size: 20px;
-  font-weight: 700;
   height: 500px;
   margin: 0 auto;
   text-align: center;
@@ -142,9 +134,10 @@ footer {
 
 .footerFont {
   background: rgba(49, 49, 49, 0.6);
-  border: 7px white;
+  border: 7px rgb(255, 255, 255);
   border-radius: 10% / 50%;
-  /* flex-wrap: wrap; */
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /*--------- iPad Responsiveness -------------*/

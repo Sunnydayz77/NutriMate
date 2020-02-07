@@ -43,7 +43,8 @@ h1 {
   text-align: center;
 }
 
-#home, #foodJournal {
+#home,
+#foodJournal {
   background: rgba(3, 94, 0, 0.6);
   border: 3px white;
   border-radius: 10% / 50%;
@@ -86,6 +87,16 @@ h3 {
   font-size: 30px;
 }
 
+input {
+  border-radius: 10% / 50%;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+
+input:hover {
+  background-color: rgb(4, 114, 32, 0.5);
+}
+
 /*--------- Footer -------------*/
 
 footer {
@@ -98,8 +109,6 @@ footer {
   display: grid;
   flex-wrap: wrap;
   font-family: "Merriweather", serif;
-  font-size: 20px;
-  font-weight: 700;
   height: 500px;
   margin: 0 auto;
   text-align: center;
@@ -107,9 +116,10 @@ footer {
 
 .footerFont {
   background: rgba(49, 49, 49, 0.6);
-  border: 7px white;
+  border: 7px rgb(255, 255, 255);
   border-radius: 10% / 50%;
-  /* flex-wrap: wrap; */
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /*--------- iPad Responsiveness -------------*/
@@ -149,37 +159,21 @@ footer {
 /*--------- Print Page -------------*/
 
 @media print {
-  header * {
-    /* visibility: hidden; */
-    display: none;
-    /* overflow: none;
-    height: 0px; */
-  }
-
-  footer * {
-    /* visibility: hidden; */
-    display: none;
-    /* overflow: none;
-    height: 0px; */
-  }
-
+  header,
+  footer,
   .container * {
-    /* visibility: hidden; */
-    display: none;
-    /* overflow: none; 
-    height: 0px; */
+    display: none !important;
   }
 
-  #printArea, #printArea * {
+  #printArea * {
     visibility: visible;
     display: block;
+    /* font-size: 14px !important; */
   }
+
   #printArea {
-    /* overflow: visible;  */
-    position: absolute !important; 
-    top:0;
-    left:0;
-    font-size: 14px;
-    display: block;
+    position: absolute !important;
+    top: 0;
+    left: 0;
   }
 }

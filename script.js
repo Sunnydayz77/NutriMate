@@ -23,8 +23,8 @@ let renderList = field => {
   });
 
   field.forEach(fields => {
-    let brandName = fields.fields.brand_name;
     let itemName = fields.fields.item_name;
+    let brandName = fields.fields.brand_name;
     let servingSize = fields.fields.nf_serving_size_qty;
     let servingSizeUnit = fields.fields.nf_serving_size_unit;
     let calories = fields.fields.nf_calories;
@@ -33,12 +33,19 @@ let renderList = field => {
 
     let newDiv = document.createElement("div");
     newDiv.classList.add("nutritionInfo");
-    newDiv.innerHTML += `<h2>Brand: ${brandName}</h2>
-        <h2>Item: ${itemName}</h2>
+    newDiv.innerHTML += `<h2>Item: ${itemName}</h2>
+        <h2>Brand: ${brandName}</h2>
         <h3>${servingSize} ${servingSizeUnit}</h3>
         <h3>Calories: ${calories}</h3>
+        <h3>Total Fat: ${totalFat}g</h3>
+        <h4>Saturated Fat: ${saturatedFat}g</h4>
+        <h4>Trans Fat: ${transFat}g</4>
+        <h3>Cholesterol: ${cholesterol}mg</h3>
         <h3>Sodium: ${sodium}mg</h3>
-        <h3>Sugar: ${sugar}g</h3>
+        <h3>Total Carbohydrates: ${totalCarbs}</h3>
+        <h4>Dietary Fiber: ${fiber}</h4>
+        <h4>Sugar: ${sugar}g</h4>
+        <h3>Protein: ${protein}g</h3>
         <hr>`;
     document.querySelector("#nutritionLabel").appendChild(newDiv);
   });
