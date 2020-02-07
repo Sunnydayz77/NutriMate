@@ -166,9 +166,8 @@ footer {
   }
 
   #printArea * {
-    visibility: visible;
     display: block;
-    /* font-size: 14px !important; */
+    visibility: visible;
   }
 
   #printArea {

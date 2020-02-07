@@ -55,25 +55,39 @@ let renderList = field => {
 //   sectionOutput.innerHTML = "";
 
 //   for (let i = 0; i < fields.length; i++) {
-//     let brandName = fields[i].fields.brand_name;
-//     let itemName = fields[i].fields.item_name;
-//     let servingSize = fields[i].fields.nf_serving_size_qty;
-//     let servingSizeUnit = fields[i].fields.nf_serving_size_unit;
-//     let calories = fields[i].fields.nf_calories;
-//     let sugar = fields[i].fields.nf_sugars;
-//     let sodium = fields[i].fields.nf_sodium;
+//     let itemName = fields.fields.item_name;
+//     let brandName = fields.fields.brand_name;
+//     let servingSize = fields.fields.nf_serving_size_qty;
+//     let servingSizeUnit = fields.fields.nf_serving_size_unit;
+//     let calories = fields.fields.nf_calories;
+//     let totalFat = fields.fields.nf_total_fat;
+//     let saturatedFat = fields.fields.nf_saturated_fat;
+//     let transFat = fields.fields.nf_trans_fatty_acid;
+//     let cholesterol = fields.fields.nf_cholesterol;
+//     let sodium = fields.fields.nf_sodium;
+//     let totalCarbs = fields.fields.nf_total_carbohydrate;
+//     let fiber = fields.fields.nf_dietary_fiber;
+//     let sugar = fields.fields.nf_sugars;
+//     let protein = fields.fields.nf_protein;
 
-//     let newDiv = document.createElement("div");
-//     newDiv.innerHTML += `<h2>Brand: ${brandName}</h2>
-//         <h2>Item: ${itemName}</h2>
+//    let newDiv = document.createElement("div");
+//     newDiv.innerHTML += `<h2 id="topItem">${itemName}</h2>
+//         <h2>Brand: ${brandName}</h2>
 //         <h3>${servingSize} ${servingSizeUnit}</h3>
 //         <h3>Calories: ${calories}</h3>
-//         <h3>Sodium: ${sodium}</h3>
-//         <h3>Sugar: ${sugar}</h3>
+//         <h3>Total Fat: ${totalFat}g</h3>
+//         <h3>Saturated Fat: ${saturatedFat}g</h3>
+//         <h3>Trans Fat: ${transFat}g</h3>
+//         <h3>Cholesterol: ${cholesterol}mg</h3>
+//         <h3>Sodium: ${sodium}mg</h3>
+//         <h3>Total Carbohydrates: ${totalCarbs}g</h3>
+//         <h3>Dietary Fiber: ${fiber}g</h3>
+//         <h3>Sugar: ${sugar}g</h3>
+//         <h3>Protein: ${protein}g</h3>
 //         <hr>`;
-//     sectionOutput.append(newDiv);
-//   }
-// };
+//      sectionOutput.append(newDiv);
+//    }
+//  };
 
 const apiCall = async () => {
   let response = await axios.get(
