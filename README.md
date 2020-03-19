@@ -1,6 +1,6 @@
 <!-- Title: A working title for your app. (Feel free to have some fun with this.) -->
 
-Title: NutriMate
+# NutriMate
 
 <!-- Description: 4 to 5 sentences summarizing the features, functions, and goals. -->
 
@@ -73,4 +73,3 @@ Unsolved problems:
 
 Link to live site: https://nutrimate.surge.sh/
 
-# NutriMate
